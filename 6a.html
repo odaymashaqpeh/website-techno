@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتاج التعلم أ - الوحدة 6</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #f0f8ff;
+            --accent-color: #2ecc71;
+            --text-color: #2c3e50;
+            --heading-font: 'Cairo', sans-serif;
+            --body-font: 'Amiri', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--body-font);
+            background: linear-gradient(120deg, var(--secondary-color), #d9eefe);
+            color: var(--text-color);
+            line-height: 1.8;
+            direction: rtl;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        header h1 {
+            font-family: var(--heading-font);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeIn 2s ease;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
+
+        section {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        section h2 {
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: background 0.3s, transform 0.3s;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #2c3e50;
+            color: #fff;
+            margin-top: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header data-aos="fade-down">
+        <h1>نتاج التعلم أ</h1>
+        <p>فهم مبادئ تطوير مواقع الويب.</p>
+    </header>
+
+    <section data-aos="fade-up">
+        <h2>الغرض من مواقع الويب ومبادئها</h2>
+        <p>تشمل مبادئ تطوير مواقع الويب العديد من الجوانب المهمة مثل سهولة الاستخدام، التخطيط، المساحة البيضاء، وتيسير الوصول. الهدف الأساسي هو إنشاء مواقع ويب تلبي احتياجات المستخدمين وتحقق أهدافهم.</p>
+        <p>تتضمن العوامل المؤثرة على أداء مواقع الويب: توافق المتصفح، سرعة التحميل، وتحسين محركات البحث. يمكن تحسين الأداء من خلال ضغط الصور وتقليل الأكواد غير الضرورية.</p>
+    </section>
+
+    <section data-aos="fade-right">
+        <h2>العوامل المؤثرة على الأداء</h2>
+        <p>هناك عدة عوامل تؤثر على أداء مواقع الويب، بما في ذلك:</p>
+        <ul>
+            <li>أماكن عرض البرامج النصية (جانب العميل وجانب الخادم).</li>
+            <li>توافق المتصفح مع العناصر المستخدمة.</li>
+            <li>النطاق الترددي وسرعات التحميل.</li>
+        </ul>
+    </section>
+
+    <a href="unit6.html" class="btn">العودة إلى صفحة الوحدة 6</a>
+
+    <footer>
+        <p>&copy; 2024 بوابة التعلم. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

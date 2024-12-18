@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الوحدة 6 - تطوير المواقع</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #f0f8ff;
+            --accent-color: #2ecc71;
+            --text-color: #2c3e50;
+            --heading-font: 'Cairo', sans-serif;
+            --body-font: 'Amiri', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--body-font);
+            background: linear-gradient(120deg, var(--secondary-color), #d9eefe);
+            color: var(--text-color);
+            line-height: 1.8;
+            direction: rtl;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        header h1 {
+            font-family: var(--heading-font);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeIn 2s ease;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
+
+        section {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        section h2 {
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: background 0.3s, transform 0.3s;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #2c3e50;
+            color: #fff;
+            margin-top: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header data-aos="fade-down">
+        <h1>الوحدة 6: تطوير المواقع</h1>
+        <p>تعرف على كيفية إنشاء وتصميم مواقع ويب حديثة.</p>
+    </header>
+
+    <section data-aos="fade-up">
+        <h2>مقدمة</h2>
+        <p>في عالمنا الرقمي المتسارع، أصبح تطوير المواقع الإلكترونية من أهم المهارات التي يجب أن يمتلكها أي متخصص في تكنولوجيا المعلومات. تشمل هذه الوحدة دراسة أساسيات تصميم المواقع الإلكترونية من خلال استخدام تقنيات HTML وCSS وJavaScript. هذه التقنيات تشكل الأساس الذي يبنى عليه أي موقع إلكتروني، حيث تُستخدم HTML لبناء الهيكل الأساسي، وCSS لتنسيق الشكل والمظهر، وJavaScript لإضافة التفاعلية.</p>
+        <p>تعد المواقع الإلكترونية اليوم وسيلة أساسية للتواصل مع العملاء، عرض المنتجات والخدمات، وحتى تقديم التعليم عن بعد. لذا فإن إتقان هذه المهارات يفتح لك أبواباً واسعة في سوق العمل الرقمي المتنامي.</p>
+    </section>
+
+    <section data-aos="fade-right">
+        <h2>المواضيع الرئيسية</h2>
+        <p>1. **مبادئ تصميم المواقع الإلكترونية:**
+            تعلم كيفية جعل المواقع سهلة الاستخدام، جذابة، ومتوافقة مع مختلف الأجهزة. ستتعرف على كيفية اختيار الألوان المناسبة، ترتيب المحتوى بشكل منطقي، وضمان التناسق في التصميم.</p>
+        <p>2. **التقنيات الأساسية:**
+            استخدام HTML لبناء الهيكل الأساسي، CSS لتنسيق العناصر وإضافة الرسوميات، وJavaScript لإضافة الحركية والتفاعلية. ستتعرف على كيفية استخدام مكتبات مثل Bootstrap وjQuery لتسريع عملية التطوير.</p>
+        <p>3. **تحسين الأداء:**
+            كيفية تحسين سرعة تحميل المواقع وضمان استجابتها السريعة على مختلف الأجهزة. ستتعلم عن ضغط الصور، وتقليل استخدام الأكواد غير الضرورية، وتحسين تجربة المستخدم.</p>
+        <p>4. **تصميم واجهات متقدمة:**
+            استخدام أدوات مثل Figma وAdobe XD لتصميم واجهات المستخدم قبل بدء البرمجة. هذه الأدوات تتيح لك تصور الشكل النهائي للموقع والعمل على تحسينه قبل كتابته.</p>
+        <p>5. **تطوير مواقع متجاوبة:**
+            تعلم كيفية استخدام تقنيات CSS المتقدمة مثل Media Queries لتصميم مواقع تعمل بشكل ممتاز على جميع الأجهزة، سواء كانت هواتف ذكية، أجهزة لوحية، أو شاشات كبيرة.</p>
+    </section>
+
+    <section data-aos="fade-left">
+        <h2>أهمية الوحدة</h2>
+        <p>تطوير المواقع الإلكترونية هو مجال ديناميكي يتطور باستمرار. تعلم هذه المهارات يمنحك القدرة على:</p>
+        <ul>
+            <li>إنشاء مواقع إلكترونية تلبي احتياجات السوق المتغيرة.</li>
+            <li>فهم أساسيات تجربة المستخدم وتحسينها.</li>
+            <li>التأقلم مع التقنيات الجديدة في تطوير المواقع.</li>
+            <li>بناء مستقبل مهني قوي في مجال تكنولوجيا المعلومات.</li>
+        </ul>
+        <p>إضافة إلى ذلك، ستتعرف في هذه الوحدة على أفضل الأدوات والمنهجيات التي يستخدمها المحترفون لتطوير مواقع تلبي معايير الجودة العالمية. ستكون قادرًا على تحليل متطلبات المشاريع وتطبيق حلول تقنية فعالة تعزز من كفاءة وأداء المواقع.</p>
+        <p>ستغطي هذه الوحدة أيضًا مفاهيم مثل تحسين محركات البحث (SEO)، والتي تساعد على زيادة ظهور الموقع في نتائج البحث، مما يزيد من عدد الزوار والعملاء المحتملين. ستتعرف على كيفية كتابة أكواد نظيفة ومنظمة تساعد محركات البحث على فهم محتوى الموقع بسهولة.</p>
+        <p>أخيراً، ستتعلم كيفية التعامل مع استضافة المواقع ونشرها على الإنترنت باستخدام خدمات مثل GitHub Pages أو Netlify. هذه المهارة ضرورية لجعل الموقع متاحًا للجمهور.</p>
+    </section>
+
+    <a href="6a.html" class="btn">نتاج التعلم أ</a>
+    <a href="6b.html" class="btn">نتاج التعلم ب</a>
+    <a href="6c.html" class="btn">نتاج التعلم ج</a>
+    <a href="index.html" class="btn">العودة إلى الصفحة الرئيسية</a>
+
+    <footer>
+        <p>&copy; 2024 بوابة التعلم. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة التعلم - تسهيل الدراسة</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #f0f8ff;
+            --accent-color: #2ecc71;
+            --text-color: #2c3e50;
+            --heading-font: 'Cairo', sans-serif;
+            --body-font: 'Amiri', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--body-font);
+            background: linear-gradient(120deg, var(--secondary-color), #d9eefe);
+            color: var(--text-color);
+            line-height: 1.8;
+            direction: rtl;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        header h1 {
+            font-family: var(--heading-font);
+            font-size: 4rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.8rem;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav .nav-buttons a {
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        nav .nav-buttons a:hover {
+            background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .unit {
+            background: #fff;
+            margin-bottom: 2.5rem;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .unit:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .unit::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            clip-path: circle(150px at 90% 10%);
+            z-index: -1;
+            transition: clip-path 0.5s ease;
+        }
+
+        .unit:hover::before {
+            clip-path: circle(300px at 90% -10%);
+        }
+
+        .unit h2 {
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .unit p {
+            font-size: 1.3rem;
+            margin-bottom: 1.8rem;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+            transform: scale(1.1);
+        }
+
+        .unit .icon {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 3rem;
+            color: var(--accent-color);
+            opacity: 0.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #2c3e50;
+            color: #fff;
+            margin-top: 3rem;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>بوابة التعلم</h1>
+        <p>بوابتك للتعلم الأفضل</p>
+    </header>
+
+    <nav>
+        <div class="nav-buttons">
+            <a href="#">الرئيسية</a>
+            <a href="#unit6">تطوير المواقع</a>
+            <a href="#unit7">تطوير التطبيقات</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="unit6" class="unit">
+            <i class="fas fa-laptop-code icon"></i>
+            <h2>الوحدة 6: تطوير المواقع</h2>
+            <p>تعرف على أساسيات إنشاء وتصميم المواقع الحديثة. تشمل هذه الوحدة HTML، CSS، JavaScript وأفضل الممارسات لتصميم مواقع متجاوبة وقابلة للوصول.</p>
+            <a href="unit6.html" class="btn">ابدأ التعلم</a>
+        </div>
+
+        <div id="unit7" class="unit">
+            <i class="fas fa-mobile-alt icon"></i>
+            <h2>الوحدة 7: تطوير التطبيقات</h2>
+            <p>استكشف عالم تطبيقات الأجهزة المحمولة. تتناول هذه الوحدة أدوات وتقنيات بناء التطبيقات لأنظمة Android وiOS باستخدام أطر عمل مثل Flutter وReact Native.</p>
+            <a href="unit7.html" class="btn">ابدأ التعلم</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 بوابة التعلم. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
